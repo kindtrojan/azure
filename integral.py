@@ -13,7 +13,7 @@ def calc_integral(lower: float, upper: float, parts: int) -> float:
 
 def looper(lower: float, upper: float) -> list:
     results = []
-    for num_parts in [10, 100, 100, 1000, 10000, 100000, 10000000]:
+    for num_parts in [1, 10, 100, 100, 1000, 10000, 100000, 1000000]:
         results.append(calc_integral(lower, upper, num_parts))
     return results
 
